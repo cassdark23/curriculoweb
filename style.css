@@ -1,0 +1,234 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CONFIGURAÇÃO GLOBAL */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  color: #333;
+  line-height: 1.6;
+  padding: 30px;
+  transition: 0.4s;
+}
+
+/* CONTAINER */
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* CABEÇALHO */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: rgb(0, 0, 0);
+  border-bottom: 4px solid rgb(0, 0, 0);
+  padding-bottom: 6px;
+  display: inline-block;
+}
+
+header h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 10px;
+  color: #555;
+}
+
+/* AVATAR */
+
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TEXTO */
+
+main p {
+  text-align: justify;
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+}
+
+/* HABILIDADES */
+
+.habilidades {
+  margin-top: 20px;
+}
+
+.habilidades ul {
+  padding-left: 20px;
+}
+
+/* BOTÕES */
+
+.btn-area {
+  margin-top: 30px;
+}
+
+/* BOTÃO CURRÍCULO */
+
+.btn-cv {
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.btn-cv:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+/* BOTÃO IMPRIMIR */
+
+.btn-print {
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-print:hover {
+  background: rgb(202, 96, 115);
+  color: black;
+}
+
+/* BOTÃO DARK MODE */
+
+.btn-theme {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-theme:hover {
+  background: rgb(219, 219, 219);
+  color: rgb(0, 0, 0);
+}
+
+/* RODAPÉ */
+
+.social-footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 2px solid #ddd;
+  text-align: center;
+}
+
+.social-footer a {
+  margin: 0 15px;
+  font-size: 28px;
+  color: black;
+  transition: 0.3s;
+}
+
+.social-footer a:hover {
+  color: rgb(0, 255, 13);
+  transform: scale(1.2);
+}
+
+/* CONTATO PARA IMPRESSÃO */
+
+.contato-print {
+  display: none;
+  margin-top: 30px;
+}
+
+/* DARK MODE */
+
+.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+
+.dark-mode header h1 {
+  color: rgb(255, 255, 255);
+}
+
+.dark-mode .social-footer a {
+  color: rgb(7, 205, 99);
+}
+
+.dark-mode .header h1 {
+  border-bottom: 4px solid rgb(255, 255, 255);
+  padding-bottom: 6px;
+  display: inline-block;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .avatar {
+    margin-top: 20px;
+  }
+}
+
+/* IMPRESSÃO */
+
+@media print {
+  .btn-area {
+    display: none;
+  }
+
+  .social-footer {
+    display: none;
+  }
+
+  .contato-print {
+    display: block;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  p {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+}

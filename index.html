@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Quem sou Eu</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div>
+          <h1>Caique Alves de Jesus</h1>
+
+          <h2>Cursando desenvolvimento de sistemas</h2>
+        </div>
+
+        <div class="avatar">
+          <img src="avatar.png" alt="Avatar" />
+        </div>
+      </header>
+
+      <main>
+        <p>
+          Eu sou um estudante atualmente cursando o terceiro ano do Ensino
+          técnico de Desenvolvimento de Sistemas, aprendendo e entendendo a
+          lógica e o mundo dos softwares e das redes. Meus interesses giram em
+          torno de compreender e me refinar nas linguagens de programação, e
+          futuramente aprender e se aprofundar em Java e Php, estudar ciências
+          de dados e sobre segurança na nuvem.
+        </p>
+
+        <div class="habilidades">
+          <h3>Principais habilidades</h3>
+
+          <ul>
+            <li>Análise de dados e pensamento analítico</li>
+            <li>Programação em Python, JavaScript e SQL</li>
+            <li>Desenvolvimento web (HTML, CSS e lógica de programação)</li>
+            <li>Design de interfaces e experiência do usuário</li>
+            <li>Resolução de problemas e pensamento crítico</li>
+          </ul>
+        </div>
+
+        <!-- BOTÕES -->
+
+        <div class="btn-area">
+          <button onclick="window.print()" class="btn-print">
+            <i class="fa-solid fa-print"></i> Imprimir Currículo
+          </button>
+
+          <button onclick="toggleTheme()" class="btn-theme">
+            <i class="fa-solid fa-moon"></i> Dark Mode
+          </button>
+        </div>
+
+        <!-- CONTATO PARA IMPRESSÃO -->
+
+        <section class="contato-print">
+          <h3>Contato</h3>
+
+          <p>
+            Email: caiquealvesdejesus210@gmail.com<br />
+            WhatsApp:+55 11 983336101<br />
+            LinkedIn:<br />
+            GitHub: github.com/cassdark23<br />
+          </p>
+        </section>
+      </main>
+
+      <footer class="social-footer">
+        <a href="https://wa.me/5511983336101" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a href="mailto:caiquealvesdejesus210@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <a href="https://github.com/cassdark23" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </footer>
+    </div>
+
+    <script>
+      function toggleTheme() {
+        document.body.classList.toggle("dark-mode");
+      }
+    </script>
+  </body>
+</html>
